@@ -1,0 +1,16 @@
+
+div{
+    width: 200px;
+    height: 100px;
+    background-color: green;
+    box-shadow: 13px 13px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+@media screen and (max-width: 400px) {
+    div{
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        box-shadow: 13px 13px 5px 1px rgba(0, 0, 0, 0.7);
+    }
+}
