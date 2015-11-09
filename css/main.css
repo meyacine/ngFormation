@@ -15,3 +15,6 @@
         box-shadow: 13px 13px 5px 1px rgba(0, 0, 0, 0.7);
     }
 }
+.list-group-item{
+    padding-left: 47px;
+}

@@ -1,1 +1,29 @@
 <h1>Ici du crud</h1>
+<form>
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="input-group">
+            <input type="text" class="form-control" placeholder="Nom" ng-model="nom">
+            <span class="input-group-btn">
+                <button class="btn btn-success" type="button" ng-click="ajoutePersonne(nom)">Ajouter</button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /.row -->
+</form>
+<h1>Liste des personnes</h1>
+<ul class="list-group">
+    <li class="list-group-item" ng-repeat="personne in listeNom">{{personne}}</li>
+</ul>
+<div class="modal fade" id="alerteDialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header  alert-danger">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Erreur</h4>
+            </div>
+            <div class="modal-body">
+                    {{message}}
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
