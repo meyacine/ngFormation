@@ -18,3 +18,9 @@
 .list-group-item{
     padding-left: 47px;
 }
+.ng-invalid-pattern{
+    background-color: #F10000;
+}
+.ng-valid-pattern.ng-dirty.form-control{
+    background-color: #00F100;
+}
